@@ -2,10 +2,7 @@
 import groovy.json.JsonSlurperClassic
 node {
 	
-	environment {
-       
-		env.PATH = env.PATH + "C:\\WINDOWS\\SYSTEM32"
-   }
+	
 	println env.PATH
 	
     def BUILD_NUMBER=env.BUILD_NUMBER
