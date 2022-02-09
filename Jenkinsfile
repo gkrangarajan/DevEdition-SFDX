@@ -23,6 +23,8 @@ node {
         checkout scm
     }
 
+try{
+println "Check started"
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Deploye Code') {
             if (isUnix()) {
@@ -46,4 +48,8 @@ node {
             println(rmsg)
         }
     }
+	}
+}catch (Exception e)
+{
+ println e
 }
