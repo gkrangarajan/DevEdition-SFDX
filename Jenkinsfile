@@ -4,7 +4,7 @@ node {
 	
 	environment {
        
-		env.PATH = env.PATH + "C:\WINDOWS\SYSTEM32"
+		env.PATH = env.PATH + "C:\\WINDOWS\\SYSTEM32"
    }
 	println env.PATH
 	
