@@ -4,5 +4,9 @@
         <members>AccountHelper</members>
         <name>ApexClass</name>
     </types>
+    <types>
+        <members>Healthcare_Quote_Staging__c</members>
+        <name>CustomObject</name>
+    </types>
     <version>52.0</version>
 </Package>
